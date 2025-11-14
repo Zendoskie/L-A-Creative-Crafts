@@ -1,0 +1,11 @@
+"""
+URL configuration for chatbot_project project.
+"""
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('chatbot_app.urls')),
+]
+
